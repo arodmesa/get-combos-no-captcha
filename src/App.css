@@ -1,0 +1,65 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(74,87,91);
+  background: linear-gradient(45deg, rgba(74,87,91,1) 4%, rgba(210,148,148,0.7231267507002801) 34%, rgba(255,0,0,1) 89%);
+}
+.title_app{
+  font-size: calc(1em + 2vw);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bolder;
+}
+.panel_notif{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  width: 150px;
+  height: 50px;
+}
+.blanco{
+  background-color: white;
+}
+.rojo{
+  background-color: red;
+}
+.verde{
+  background-color: green;
+}
+.panel_error{
+  text-align: center;
+  background-color: rgb(174, 186, 186);
+  min-width: 250px;
+  height: 50px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(1em + 0.5vw);
+  font-weight: bolder;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: red;
+}
+.btn_logOut{
+  font-size: large;
+  font-weight: bolder;
+  padding: 15px;
+  background-color: rgba(255, 0, 0, 0.897);
+  border-radius: 15px;
+  color: rgba(255, 255, 255);
+}
+.cod{
+  font-size: calc(1em + 0.5vw);
+}
+.fa:hover{
+  cursor: pointer;
+}
+.btn_logOut:hover{
+  cursor: pointer;
+  background-color: rgba(255, 0, 0, 0.225);
+}
