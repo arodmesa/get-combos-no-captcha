@@ -167,7 +167,7 @@ function App() {
     console.log('Busqueda !!!!!!')
     axios.post('https://api-admin.tuenvio.cu/graphql/', data, config)
     .then(res => {
-      if (res.data[0].errors && res.data[0].errors[0].message==="Signature has expired"){
+      if (res.data[0].errors && (res.data[0].errors[0].message==="Signature has expired"||res.data[0].errors[0].message==="Error decoding signature")){
         setToken('');
         localStorage.setItem('jwt','');
         setAllProvinces();
